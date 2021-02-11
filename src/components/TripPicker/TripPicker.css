@@ -1,0 +1,77 @@
+.trip-picker {
+  max-width: 1200px;
+}
+
+.slide-number {
+  color: #41EAD4;
+  position: relative;
+  border-top: 1px solid #41EAD4;
+  padding: 0 0 0 5px;
+}
+
+.slide-number:after {
+  content: "";
+  position: absolute;
+  background-color: #41EAD4;
+  height: 50%;
+  width: 1px;
+  left: 0;
+  right: 0;
+}
+
+.tabs-container {
+  border-bottom: 1px solid #41EAD4;
+  padding-bottom: 33px;
+}
+
+.selected-tab {
+  background-color: #41EAD4;
+  height: 4px;
+  transition:all 250ms linear;
+  will-change: transform;
+  bottom: -2px;
+}
+
+.tab {
+  opacity: 0.5;
+}
+
+.tab.active {
+  opacity: 1;
+  color: #41EAD4;
+}
+
+.trip-image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 8px;
+  height: 607px;
+  width: 486px;
+}
+
+.t2-button {
+  width: 282px;
+  line-height: 65px;
+  margin-top: 80px;
+  box-shadow: rgb(0 202 224 / 58%) 20px 30px 99px -30px;
+}
+
+.arrow {
+  background-color:#011627
+}
+
+.social {
+  position: relative;
+  border-bottom: 1px solid #41EAD4;
+  padding: 0 3px 3px 0;
+}
+
+.social:after {
+  content: "";
+  position: absolute;
+  background-color: #41EAD4;
+  height: 50%;
+  width: 1px;
+  right: 0;
+  bottom: 0;
+}

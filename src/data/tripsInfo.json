@@ -1,0 +1,30 @@
+[
+    {
+        "tripName": "Chill Adventure",
+        "shortDescription": "Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.",
+        "longDescription": "Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.",
+        "imgTitle" : "GRAND DUNES LANDSCAPE",
+        "imgName" : "joe-mania.webp"
+    },
+    {
+        "tripName": "Spooky Times",
+        "shortDescription": "Sed pulvinar ut ligula vel hendrerit. Maecenas sed porta dolor. Nunc.",
+        "longDescription": "Ut fermentum commodo felis non semper. Sed rhoncus id turpis et congue. Etiam porta erat vitae risus condimentum dignissim. Pellentesque et neque nisi. Sed bibendum eleifend erat. Nullam vitae tellus ultrices, elementum.",
+        "imgTitle" : "Ma'in Hot Springs",
+        "imgName" : "joe-mania2.jpg"
+    },
+    {
+        "tripName": "Desert Madness",
+        "shortDescription": "Cras cursus erat pellentesque, mollis erat nec, cursus dui. Suspendisse sed.",
+        "longDescription": "Vestibulum nec posuere augue, nec porta purus. Pellentesque consequat pharetra nulla, ut dictum nisl molestie nec. In at tortor vel magna egestas condimentum non ac magna. Nam a erat orci. Aliquam rhoncus.",
+        "imgTitle" : "Sahara Desert",
+        "imgName" : "joe-mania3.jpg"
+    },
+    {
+        "tripName": "Out in the wild",
+        "shortDescription": "Fusce libero nisi, aliquam non nisl at, hendrerit pharetra massa. Nulla.",
+        "longDescription": "Quisque ultrices tincidunt arcu, quis condimentum purus tincidunt eu. Duis elit justo, egestas quis metus quis, rhoncus sodales sem. Maecenas blandit nisl sed velit sagittis, et venenatis nisi dignissim. Ut varius luctus.",
+        "imgTitle" : "Alps Mountains",
+        "imgName" : "joe-mania4.jpg"
+    }
+]

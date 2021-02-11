@@ -1,38 +1,61 @@
-.App {
+main {
+  font-family: Larsseit;
+}
+
+.search-icon {
+  height: 16px;
+}
+
+.logo-icon {
+  height: 30px;
+  width: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.t-button {
+  width: 167px;
+  line-height: 62px;
   text-align: center;
+  border-radius: 48px;
+  background-color: #00C9E0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-container {
+  max-width: 1200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0 31% 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.intro:before {
+  background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%);
+  content: "";
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.trip-picker__container {
+  background-color: #011627;
+  padding-bottom: 65px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-bold {
+  font-family: Noe Display;
+}
+
+.theme-color {
+  color: #41EAD4;
+}
+
+.theme-bgcolor {
+  background-color: #41EAD4;
 }
