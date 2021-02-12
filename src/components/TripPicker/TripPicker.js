@@ -84,8 +84,8 @@ function TripPicker() {
             {tripData[selectedTripIndex].imgTitle}
           </div>
           <div className="trip-controls absolute right-0 bottom-0 flex cursor-pointer">
-            <img alt="nav arrow" className="arrow w-10 pr-1 rounded-tl-md" src={ArrowLeft} onClick={() => prevTrip()}/>
-            <img alt="nav arrow" className="arrow w-10 transform rotate-180" src={ArrowLeft} onClick={() => nextTrip()}/>
+            <img alt="nav arrow" width="40" height="40" className="arrow w-10 pr-1 rounded-tl-md" src={ArrowLeft} onClick={() => prevTrip()}/>
+            <img alt="nav arrow" width="40" height="40" className="arrow w-10 transform rotate-180" src={ArrowLeft} onClick={() => nextTrip()}/>
           </div>
         </div>
 

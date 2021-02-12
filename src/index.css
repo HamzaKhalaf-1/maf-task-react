@@ -4,4 +4,5 @@
 
 @font-face {font-family: "Larsseit";
     src: url("assets/d5bd523d9152e80458f764c62c5bb9df.woff2") format("woff2"); /* IE9*/
+    font-display: swap;
 }
