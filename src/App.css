@@ -123,5 +123,6 @@ main {
 
   .menu-container {
     padding: 0 20px;
+    overflow-x: hidden;
   }
 }
