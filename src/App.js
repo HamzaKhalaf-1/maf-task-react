@@ -34,13 +34,13 @@ function App() {
           </p>
         </div>
 
-        <div className="absolute right-72 bottom-40 flex flex-col items-center h-20 justify-between">
+        <div className="absolute right-72 bottom-40 flex flex-col items-center h-20 justify-between hide-mobile">
           <img className="cursor-pointer" height="20" alt="Twitter Icon" width="20" src={TwitterIcon}/>
           <img className="cursor-pointer" height="20" alt="Instagram Icon" width="20" src={InstagramIcon}/>
           <img className="cursor-pointer" height="15" alt="Facebook Icon" width="15" src={FacebookIcon}/>
         </div>
 
-        <div className="absolute left-56 bottom-40 flex transform -rotate-90 items-center text-white">
+        <div className="absolute left-56 bottom-40 flex transform -rotate-90 items-center text-white hide-mobile">
           <div className="theme-bgcolor w-16 h-0.5"></div>
           <div className="pl-2">SCROLL</div>
         </div>

@@ -4,11 +4,12 @@ main {
 
 .search-icon {
   height: 16px;
+  width: 32px;
 }
 
 .logo-icon {
-  height: 30px;
-  width: 60px;
+  height: 27px;
+  width: 57px;
 }
 
 .container {
@@ -22,6 +23,19 @@ main {
   text-align: center;
   border-radius: 48px;
   background-color: #00C9E0;
+  position: relative;
+}
+
+.t-button:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #FFF;
+
 }
 
 .menu-container {
@@ -58,4 +72,15 @@ main {
 
 .theme-bgcolor {
   background-color: #41EAD4;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .menu-container {
+    padding: 0 20px;
+  }
 }
