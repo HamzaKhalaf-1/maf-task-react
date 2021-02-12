@@ -40,6 +40,7 @@ main {
 
 .menu-container {
   max-width: 1200px;
+  height: 62px;
 }
 
 .intro {
@@ -74,6 +75,46 @@ main {
   background-color: #41EAD4;
 }
 
+.menu {
+  position: relative;
+  top: 0;
+  right: 0;
+  transition: all 1s linear;
+  pointer-events: all;
+
+}
+
+.menu.selected {
+  border-radius: 50%;
+  top: -40vh;
+  right: -50vw;
+}
+
+.hidden-menu {
+  position: fixed;
+  width: 20%;
+  height: 50vh;
+  line-height: 50vh;
+  color: #fff;
+  background-color: #011627;
+  top: -50vh;
+  right: -20%;
+  font-size: 20px;
+  text-align: center;
+  z-index: 999;
+  transition: all 1s linear;
+  border-radius: 48px 0 0 48px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #41EAD4;
+
+}
+
+.hidden-menu.open {
+  top: 100px;
+  right: 0;
+}
+
 
 @media only screen and (max-width: 600px) {
   .hide-mobile {
@@ -82,5 +123,6 @@ main {
 
   .menu-container {
     padding: 0 20px;
+    overflow-x: hidden;
   }
 }
