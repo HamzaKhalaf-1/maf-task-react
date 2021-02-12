@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import './App.css';
 
 import bgImage from './assets/cbimage.webp'
@@ -10,17 +10,30 @@ import Search from './assets/search 1.png'
 
 const TripPicker = React.lazy(() => import('./components/TripPicker/TripPicker'));
 
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const setIsOpenBlocking = (bool, e) => {
+    e.stopPropagation();
+    setIsOpen(bool)
+  }
+
   return (
-    <main className="wrapper">
+    <main className="wrapper overflow-x-hidden" onClick={(e) => setIsOpenBlocking(false, e)} >
+      <div className={`hidden-menu ${isOpen ? 'open': ''}`} onClick={(e) => e.stopPropagation()}>
+        Click outside to close the menu :D
+      </div>
       <div className="intro relative" style={{backgroundImage: `url(${bgImage})`}}>
         <div className="container flex justify-between menu-container">
           <img className="logo-icon" width="10" height="5" alt="logo" src={Logo}/>
           <span className="flex items-center">
             <img className="cursor-pointer search-icon pr-4" width="30" height="30" alt="search" src={Search} />
-            <div className="t-button text-white cursor-pointer">
+
+            <div className={`t-button text-white cursor-pointer menu ${isOpen ? 'selected': ''}`} onClick={(e) => setIsOpenBlocking(!isOpen, e)}>
               MENU
             </div>
+
           </span>
         </div>
 
