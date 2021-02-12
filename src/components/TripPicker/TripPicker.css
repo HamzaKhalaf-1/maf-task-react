@@ -75,3 +75,25 @@
   right: 0;
   bottom: 0;
 }
+
+.random-blur {
+  background: #41EAD4;
+  opacity: 0.4;
+  filter: blur(90px);
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .trip-image {
+    width: 100%;
+    padding: 0 20px;
+    height: 400px;
+  }
+
+  .description-container {
+    margin: 0;
+  }
+}

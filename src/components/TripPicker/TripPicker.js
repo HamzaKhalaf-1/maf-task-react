@@ -48,6 +48,15 @@ function TripPicker() {
 
   return (
     <div className="trip-picker container relative">
+
+      <div className="random-blur absolute right-0 top-1/4 w-52 h-52"></div>
+      <div className="random-blur absolute right-1/3 top-1/4 w-52 h-52"></div>
+      <div className="random-blur absolute right-2/3 top-1/4 w-52 h-52"></div>
+      <div className="random-blur absolute right-0 top-3/4 w-52 h-52"></div>
+      <div className="random-blur absolute right-1/3 top-3/4 w-52 h-52"></div>
+      <div className="random-blur absolute right-2/3 top-3/4 w-52 h-52"></div>
+
+
       <div className="flex items-center text-white pb-10">
         <div className="text-7xl font-bold pr-5">Pick your trip</div>
         <div className="theme-color cursor-pointer transform rotate-45 text-2xl leading-3">+</div>
@@ -65,18 +74,18 @@ function TripPicker() {
         <span className="selected-tab absolute" style={{ width: tabWidth, transform: offset }}></span>
       </div>
 
-      <div className="flex info-container pt-24">
+      <div className="flex info-container pt-24 slider">
         <div className="trip-image relative" style={{backgroundImage: `url(${imagesDict[selectedTripIndex]})`}}>
-          <img className="absolute -left-14 -bottom-14" src={Dots}/>
-          <div className="flex flex-col img-info absolute left-0 bottom-1/2 text-white transform -translate-x-1/2 -translate-y-1/2 text-2xl w-52 text-left">
+          <img className="absolute -left-14 -bottom-14 hide-mobile" src={Dots} alt="dots"/>
+          <div className="flex flex-col img-info absolute left-0 bottom-1/2 text-white transform -translate-x-1/2 -translate-y-1/2 text-2xl w-52 text-left hide-mobile">
             <div className="slide-number">
               0{selectedTripIndex + 1}.
             </div>
             {tripData[selectedTripIndex].imgTitle}
           </div>
           <div className="trip-controls absolute right-0 bottom-0 flex cursor-pointer">
-            <img className="arrow w-10 pr-1 rounded-tl-md" src={ArrowLeft} onClick={() => prevTrip()}/>
-            <img className="arrow w-10 transform rotate-180" src={ArrowLeft} onClick={() => nextTrip()}/>
+            <img alt="nav arrow" className="arrow w-10 pr-1 rounded-tl-md" src={ArrowLeft} onClick={() => prevTrip()}/>
+            <img alt="nav arrow" className="arrow w-10 transform rotate-180" src={ArrowLeft} onClick={() => nextTrip()}/>
           </div>
         </div>
 
@@ -95,9 +104,9 @@ function TripPicker() {
             SHARE IT:
           </div>
           <div className="social flex justify-between w-full">
-            <img className="cursor-pointer" height="20" width="20" src={TwitterIcon}/>
-            <img className="cursor-pointer" height="15" width="15" src={FacebookIcon}/>
-            <img className="cursor-pointer" height="20" width="20" src={InstagramIcon}/>
+            <img alt="Twitter Icon" className="cursor-pointer" height="20" width="20" src={TwitterIcon}/>
+            <img alt="Facebook Icon" className="cursor-pointer" height="15" width="15" src={FacebookIcon}/>
+            <img alt="Instagram Icon" className="cursor-pointer" height="20" width="20" src={InstagramIcon}/>
           </div>
         </div>
 
